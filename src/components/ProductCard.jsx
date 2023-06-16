@@ -1,17 +1,20 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
+import "./productcard.css";
 
 const ProductCard = ({ productData }) => {
   return (
-    <Card style={{ width: "18rem", display:"flex" }}>
-      <Card.Img variant="top" src={productData.images[0]} />
-      <Card.Body>
-        <Card.Title>{productData.title}</Card.Title>
-        <Card.Text>{productData.description}</Card.Text>
-        <Link to={`/item/${productData.id}`}>Más info</Link>
-      </Card.Body>
-    </Card>
+    <div className="row d-flex ">
+      <div className="Card text-center  wrap col-3">
+      <img className="images" variant="top" src={productData.images[0]} />
+      <div className="card-body text-light">
+        <h4 className="card-title">{productData.title}</h4>
+        <p className="card-text text-secondary">{productData.description}</p>
+        <a ><Link to={`/item/${productData.id}` } className="btn btn-outline-secondary rounded-0">Más info</Link></a>
+      </div>
+    </div>
+    </div>
+    
   );
 };
 

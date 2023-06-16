@@ -11,7 +11,7 @@ import "../components/NavBars.css";
 const NavBar = () => {
   return (
     <navbar class="navbar-deco">
-          <Navbar  bg="light" expand="xl"  >
+          <Navbar  bg-dark expand="xl"  >
            <Container>
            <Navbar.Brand href="/">Mi Bazar</Navbar.Brand>
            <Navbar.Toggle aria-controls="basic-navbar-nav" />
