@@ -1,15 +1,14 @@
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CartProvider } from "./context/CartContext";
 
 import MainRouter from "./routes/MainRouter";
 
-const App = ()=>{
-
+const App = () => {
   return (
-    <div className="App">
+    <CartProvider>
       <MainRouter />
-      
-    </div>
+    </CartProvider>
   );
 };
 
