@@ -60,7 +60,7 @@ export const ProductsData = [
     id: 6,
     title: "Sarten Tramontina",
     description:
-      "Sarten Tramontina Paris, 24 cm. De aluminio revestido con antiadherente Starflon T1 interno, proporcionan cocción uniforme y son fáciles de lavar, ",
+      "Sarten Tramontina Paris, 24 cm. De aluminio revestido con antiadherente Starflon T1 interno. ",
     price: 1499,
     stock: 250,
     category: "cocina",

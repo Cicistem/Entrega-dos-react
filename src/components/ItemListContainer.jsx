@@ -7,9 +7,8 @@ const ItemListContainer = ({ productsData }) => {
     <div
     style={{
       display: "flex",
-      flexWrap: "wrap",
-      width: "90vw",
       height: "100%",
+      flexwrap: "wrap",
       justifyContent: "space-around",
     }}
   >

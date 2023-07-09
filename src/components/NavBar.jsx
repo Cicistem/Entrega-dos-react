@@ -10,7 +10,7 @@ import "../components/NavBars.css";
 
 const NavBar = () => {
   return (
-    <navbar class="navbar-deco">
+    <NavBar class="navbar-deco">
           <Navbar  bg-dark expand="xl"  >
            <Container>
            <Navbar.Brand href="/">Mi Bazar</Navbar.Brand>
@@ -37,7 +37,7 @@ const NavBar = () => {
          </Container>
    
        </Navbar>
-    </navbar> 
+    </NavBar> 
 
   );
 };

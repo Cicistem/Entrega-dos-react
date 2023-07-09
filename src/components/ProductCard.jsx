@@ -8,7 +8,7 @@ import "./productcard.css";
 const ProductCard = ({ productData }) => {
   return (
     <div className="row d-flex ">
-      <div className="Card text-center  wrap col-3">
+      <div className="Card text-center  wrap">
       <img className="images" variant="top" src={productData.images} />
       <Card.Body>
         <div className="card-body ">
