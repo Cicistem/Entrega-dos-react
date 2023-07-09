@@ -9,9 +9,9 @@ const CartWidget = () => {
   return (
     <div
       style={{
-        display: "flex",
-        width:"35px",
-        justifyContent: "space-between",
+        display: "flex-wrap",
+        width:"40px",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >

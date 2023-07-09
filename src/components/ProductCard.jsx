@@ -9,16 +9,17 @@ const ProductCard = ({ productData }) => {
   return (
     <div className="row d-flex ">
       <div className="Card text-center  wrap col-3">
-      <img className="images" variant="top" src={productData.images[0]} />
+      <img className="images" variant="top" src={productData.images} />
       <Card.Body>
-        <div className="card-body text-light">
+        <div className="card-body ">
           <h4 className="card-title">{productData.title}</h4>
           <p className="card-text text-secondary">{productData.description}</p>
-          <a ><Link to={`/item/${productData.id}` } className="btn btn-outline-secondary rounded-0">Más info</Link></a>
           <CartButtons/>
+          <a><Link to={`/item/${productData.id}` } className="btn btn-outline-secondary rounded-0">Más info</Link></a>
         </div>
+
       </Card.Body>
-    </div>
+      </div>
     </div>
     
   );

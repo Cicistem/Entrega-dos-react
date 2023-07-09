@@ -4,7 +4,15 @@ import ProductCard from "../components/ProductCard";
 
 const ItemListContainer = ({ productsData }) => {
   return (
-    <div>
+    <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      width: "90vw",
+      height: "100%",
+      justifyContent: "space-around",
+    }}
+  >
       {productsData.map((product) => {
         return <ProductCard key={product.id} productData={product} />;
       })}
